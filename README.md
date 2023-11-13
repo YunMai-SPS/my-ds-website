@@ -1,2 +1,2 @@
 # my-ds-website
-my data science profile website
+This website showcases some of my data science projects.
