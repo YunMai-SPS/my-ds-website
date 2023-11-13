@@ -1,0 +1,108 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIOINF Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('da_page') }}">HOME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class='vh-5',id='headPanel'>
+                <p class="custom-head uppercase-text"><span class="underline">BIOINFORMATICS</span></p>
+            </div>
+            <section_small id="skills">
+                <div class='vh-25 bg-lightblue1',id='processPanel'>
+                    <div class="process-section">
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head uppercase-text">Proposal</p>
+                                <p class="process-item-describe">Formulate analytical proposals in bioinformatics by conducting exploratory data analysis, including descriptive statistics, visualizations, and preliminary analyses. Develop hypotheses derived from discerned patterns and trends within the data.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head uppercase-text">Report</p>
+                                <p class="process-item-describe">Conduct bioinformatics analysis through stages such as data collection, cleaning, feature engineering, model development, evaluation, interpretation, communication, iterative refinement, deployment, and report generation.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head uppercase-text">Turnaround Time</p>
+                                <p class="process-item-describe">The timeframe ranges from two weeks to three months, during which distinct phases and milestones are collaboratively defined with clients.</p> 
+                            </div>   
+                        </div>
+                        
+                    </div>   
+                </div>
+            </section_small>
+
+            <section id="case">
+                <div class='vh-100'> 
+                    <div class="section-text-container-white vh-5">
+                        <p class="custom-head_3 uppercase-text"><span class="underline-lightblue2">CASE: COVID-19 immune profile and its role in COVID-19 pathology</span></p>
+                        <p class="section-graph">Innate immune responses, including the production of type I and III interferon (IFN), impaired NK cytotoxicity, cytokine production, and lymphopenia, alongside adaptive immune responses like elevated neutrophils, increased inflammatory monocytes, and higher levels of pro-inflammatory cytokines (IL-6 and GM-CSF), as well as excessive T-cell activation (HLA-DR, CD38, CD69, CD25, CD44, Ki-67, OX40, and CD137 by CD4+ and CD8+ T cells), have been reported to associated with disease severity in COVID-19. Analyzing high-dimensional cytometry data to identify known or novel cell populations and discriminate the differential expression of biomarkers will contribute to understanding the COVID-19 immune profile and its role in COVID-19 pathology.</p>
+                        <p class="custom-head_3"><span class="underline-lightblue2">Lineage marker expression</span></p>
+                        <p class="section-graph">The median (arcsinh-transformed) expression of 6 lineage markers and 22 functional markers across all cells for each sample in the PBMC dataset is shown in this heatmap.</p>
+                        <div class="image-container-1">
+                            <img src="{{ url_for('static', filename='bio_fig1.png') }}" alt="figure 1"> 
+                        </div>
+                        <p class="custom-head_3"><span class="underline-lightblue2">Cell population identification</span></p>
+                        <p class="section-graph">Through initial clustering with FlowSOM, succeeded by metaclustering using ConsensusClusterPlus, the cells were organized into 20 clusters. The resulting heatmap illustrates the median marker intensities of the 6 lineage markers across the 49 cell populations.</p>
+                        <div class="image-container-3">
+                            <img src="{{ url_for('static', filename='bio_fig20_hm_celltype_30cluster.png') }}" alt="figure 2"> 
+                            <img src="{{ url_for('static', filename='bio_fig30_hm_cellstate_30cluster.png') }}" alt="figure 3"> 
+                        </div>
+                        <p class="section-graph">20 PBMC populations in tSNE representation based on the expression of lineage markers: CD3, CD4, CD8, FOXP3, CD19 and CD14.(left). FlowSOM clusters were annotated based on expression of lineage markers across each cluster.(right)</p>
+                        <div class="image-container-3">
+                            <img src="{{ url_for('static', filename='bio_fig40.png') }}" alt="figure 4"> 
+                            <img src="{{ url_for('static', filename='bio_fig50.png') }}" alt="figure 5"> 
+                        </div>
+                        <p class="section-graph">Lymphocyte counts for healthy controls, patients in ward, COVID‐19 patients in ICU, patients changed from ICU to ward (fig A), leukocyte subsets for healthy controls, patients in ward, COVID‐19 patients in ICU, patients changed from ICU to ward based on manual gating (fig B). The PBMC populations based on the aforementioned lineage markers for each condition are represented in the tSNE two-dimensional plot. The dendrogram shows the comparative similarity based on the Kolmogorov–Smirnov statistic calculated using the cross‐entropy distributions derived from tSNE (fig C). tSNE representation of PBMC populations based on aforementioned lineage markers for each condition (fig D). Dendrogram based on the Kolmogorov–Smirnov statistic calculated using the cross‐entropy distributions derived from tSNE show the significant difference between healthy controls/patients in ward and COVID‐19 patients in ICU or patients changed from ICU to ward, COVID‐19 patients in ICU and patients changed from ICU to ward (fig G). </p>
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='bio_fig6.png') }}" alt="figure 6"> 
+                            <img src="{{ url_for('static', filename='bio_fig7.png') }}" alt="figure 7"> 
+                        </div>
+                        <p class="custom-head_3"><span class="underline-lightblue2">Differential analysis</span></p>
+                        <p class="custom-head_4">Differential cell population abundance</p>
+                        <p class="section-graph">Distribution of the 30 unsupervised clustered populations is depicted for each sample in Figure A. Figure B illustrates the relative abundance of the 6 PBMC populations in each sample, while Figure C provides insights into their abundance in different conditions. Lastly, Figure D showcases the relative abundance of the 5 PBMC populations in both healthy controls and COVID‐19 patients in the ICU (CD19+ B cell abundance is too low in all samples and is not shown).</p>
+                        <div class="image-container">
+                            <img src="{{ url_for('static', filename='bio_fig13.png') }}" alt="figure 8"> 
+                        </div>
+                        <p class="custom-head_4">Differential analysis of marker expression stratified by cell population</p>
+                        <p class="section-graph">Differential analysis of marker expression stratified by cell population
+                            Results of the differential states test reveal the different expression of signaling markers within various cell populations in healthy controls and COVID‐19 patients in the ICU (Figure A). In Figure B, the normalized expression of signaling markers is averaged and compared between healthy controls and COVID‐19 patients in the ICU. Additionally, Figure C displays the comparison of signaling marker expression in COVID‐19 patients in the ICU and patients transitioning from the ICU to the ward.</p>
+                        <p class="section-graph">Certain markers exhibit increased levels in COVID‐19 patients in the ICU: CCR7, CTLA-4, IL-4, IL-10, and CD25 show elevated expression in CD4+CD8- T cells, while CCR7 and IL-10 are elevated in CD8+CD4- T cells. PD-1 is upregulated in CD4+CD8+ T cells, and IL-10, CD25, IL-4, and CTLA-4 show elevated levels in CD14+ monocytes. Additionally, IL-17a and CD25 are increased in CD19+ B cells. Conversely, certain markers decrease in COVID‐19 patients in the ICU, with 4-1BB, IFNg, IL-6, and HLA-DR showing decreased expression in FOXP3 regulatory T cells. IFNg decreases in CD4+CD8- and CD8+CD4- T cells, 4-1BB decreases in CD19+ B cells, and IFNg decreases in CD14+ monocytes.</p>
+                        <div class="image-container-5">
+                            <img src="{{ url_for('static', filename='bio_fig9.png') }}" alt="figure 9"> 
+                            <img src="{{ url_for('static', filename='bio_fig10.png') }}" alt="figure 10"> 
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+     
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DA Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class='vh-5',id='headPanel'>
+                <p class="custom-head"><span class="underline">DATA ANALYTICS</span></p>
+            </div>
+            <section_small id="skills">
+                <div class='vh-25 bg-lightblue1',id='processPanel'>
+                    <div class="process-section">
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head">Proposal</p>
+                                <p class="process-item-describe">Generate proposals by exploring data through descriptive statistics, visualizations, and preliminary analyses. Formulate hypotheses based on observed patterns and trends in the data.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head">Report</p>
+                                <p class="process-item-describe">Data collection, data Cleaning, feature engineering, model development, evaluation, interpretation, communication, iterative refinement, deployment, and generate the report.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item">
+                            <div class="item-content">
+                                <p class="process-item-head">Turnaround Time</p>
+                                <p class="process-item-describe">The timeframe ranges from two months to six months, during which distinct phases and milestones are collaboratively defined with clients.</p> 
+                            </div>   
+                        </div>
+                        
+                    </div>   
+                </div>
+            </section_small>
+
+            <section id="case">
+                <div class='vh-100'> 
+                    <div class="indent-section">
+                        <div class="section-text-container-white">
+                            <p class="custom-head_3"><span class="underline-lightblue2">SENTIMENT ANALYSIS: STOCK TREND PREDICTION USING NEWS</span></p>
+                            <p class="custom-head_4">Coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+     
+</body>
+</html>

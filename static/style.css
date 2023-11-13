@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .vh-25 {
+    min-height: 25vh;
+  }
+  .vh-30 {
+    min-height: 30vh;
+  }
+  .vh-5 {
+    min-height: 5vh;
+  }
+  .vh-50 {
+    min-height: 50vh;
+  }
+  .vh-70 {
+    min-height: 70vh;
+  }
+  .vh-100 {
+    min-height: 100vh;
+  }
+  .vh-150 {
+    min-height: 150vh;
+  }
+
+  /* for illustration */
+  .bg-red   { background: red;   }
+  .bg-green { background: lightgreen; }
+  .bg-blue  { background: blue;  }
+  .bg-lightblue1 {background: #EAF3FA; }
+  .bg-lightblue2 {background: #C1DAF1; }
+  div       { color: white;      }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    align-items: center; /* Vertically center align */
+    justify-content: center; /* Vertically center align */
+    align-items: center; /* Horizontally center align */
+    height: 100vh; /* Full viewport height */
+  }
+
+  /* Add CSS for the fixed top navigation */
+  .topnav {
+      width: 100%;
+      /*background-color: #f2f2f2; */
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      transition: top 0.3s; /* Add smooth transition effect */
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .content {
+    margin-top: 30px; /* Adjust this margin to avoid content being hidden under the fixed navigation */
+  }
+
+  #headImage {
+    /*width: 1200px;*/  /* Set a specific width for the div */
+    height: 600px;   /* Set a specific height for the div */
+    text-align: center; /* Center the content horizontally */
+    background-color: white; /* Background color for the div */
+    border: 1px solid #ccc; /* Border around the div */
+    padding: 20px; /* Add some padding */
+  }
+
+  #headImage img {
+      max-width: 100%; /* Ensure the image does not exceed the div's width */
+      max-height: 100%; /* Ensure the image does not exceed the div's height */
+      display: block; /* Remove any extra spacing around the image */
+      margin: 0 auto; /* Center the image horizontally within the div */
+      top: -550px;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text box precisely */
+    display: flex;
+    flex-direction: column; /* Stack the text boxes vertically */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .text-box-item-1 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the text box precisely */
+      margin: 10px ; /* Add some spacing between text boxes */
+      text-align: center;
+      width: 100px; /* Set the desired width */
+      height: 100px; /* Set the desired height */
+  }
+
+  .text-box-item-2 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the text box precisely */
+      margin: 10px ; /* Add some spacing between text boxes */
+      text-align: center;
+      width: 150px; /* Set the desired width */
+      height: 100px; /* Set the desired height */
+  }
+
+  .white-bg {
+      background-color: rgba(255, 255, 255, 0.8); /* White background color with transparency */
+  }
+
+  .no-bg {
+      background-color: transparent; /* No background color */
+  }
+
+  .text-box-item-1 p {
+    color: #6FA8DC;
+    font-size: 30px; /* Set the font size as needed */
+    font-family: Arial, sans-serif; /* Set the desired font family */
+    font-weight: bold; /* Set the desired font weight (e.g., bold) */
+    margin-top: 12px; /* Decrease top margin to move text up */
+}
+
+  .text-box-item-2 p {
+    font-size: 18px; /* Set the font size as needed */
+    font-family: Arial, sans-serif; /* Set the desired font family */
+    margin-top: 12px; /* Decrease top margin to move text up */
+  }
+
+  .underline {
+    text-decoration: underline; /* Add underline to text */
+  }
+
+  .underline-white {
+    text-decoration: underline; /* Add underline to text */
+    text-decoration-color: white;
+    text-underline-offset: 3px;
+  }
+  .underline-lightblue2 {
+    text-decoration: underline; /* Add underline to text */
+    text-decoration-color: #C1DAF1; /*#C1DAF1*/
+    text-underline-offset: 10px;
+  }
+
+  .custom-head {
+    font-family: Helvetica; /* Replace with your custom font */
+    margin-left: 130px;  /* Adjust the left margin as needed */
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 26px;
+    color: #666666 ; /* #ccc  #444444 */
+    padding: 20px;
+  }
+
+  .custom-head_2 {
+    font-family: Helvetica; /* Replace with your custom font */
+    margin-left: 130px;  /* Adjust the left margin as needed */
+    margin-bottom: 60px;
+    margin-top: 00px;
+    font-size: 26px;
+    color: #666666 ; /* #ccc  #444444 */
+    padding: 20px;
+  }
+
+  .custom-head_3 {
+    font-family: Helvetica; 
+    margin-left: 0px;  
+    margin-bottom: 10px;
+    margin-top: 00px;
+    font-size: 20px;
+    color: #666666 ; /* #ccc  #444444 */
+    padding: 20px;
+    font-weight: 100;
+  }
+
+  .custom-head_4 {
+    font-family: Helvetica; 
+    margin-left: 5px;  
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 18px;
+    color: #666666 ; /* #ccc  #444444 */
+    padding: 16px;
+    font-weight: 100;
+  }
+
+  .content-text {
+    background-color: #f0f0f0;
+    font-family: Helvetica;
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #666666 ; /* #ccc  #444444 */
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-gap: 20px; /* Adjust the gap between dashboard items */
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+  }
+
+  .dashboard-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+  }
+
+  .dashboard-item img {
+      width: 90px; /* Adjust the icon width as needed */
+      height: 90px; /* Adjust the icon height as needed */
+      margin-right: 10px; /* Adjust the spacing between the icon and text */
+      margin-top: 12px; /* Add spacing between graphs */
+  }
+
+  .item-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .graphs {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .graph {
+      /* Style your graph here */
+      margin-top: 5px; /* Add spacing between graphs */
+  }
+
+  .dashboard-item-head {
+    font-size: 18px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-bottom: 5px; /* Decrease top margin to move text up */
+  }
+
+  .dashboard-item-describe {
+    font-size: 14px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-top: 5px; /* Decrease top margin to move text up */
+    margin-bottom: 5px; /* Decrease top margin to move text up */
+  }
+  .dashboard-item-example {
+    font-size: 14px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-top: 5px; /* Decrease top margin to move text up */
+
+  }
+
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      color: #333;
+      height: 40px; /* Adjust this value to your preferred height */
+  }
+
+  nav {
+    line-height: 30px; /* Adjust this value to vertically center the text */
+  }
+
+  nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      /* justify-content: space-around; */
+      justify-content: center; /* Center-align the links */
+  }
+
+  nav li {
+      margin: 0 20px; /* Adjust the margin value to control the space between text elements */
+  }
+
+  nav a {
+      color: #333;
+      text-decoration: none;
+      margin-top: 0;
+      font-family:  Helvetica;
+  }
+
+
+  section {
+    height: 600px; /* Adjust as needed */
+  }
+
+  section_large {
+    height: 650px; /* Adjust as needed */
+  }
+
+  section_medium {
+    height: 300px; /* Adjust as needed */ 
+  }
+  section_small {
+    height: 100px; /* Adjust as needed */ 
+  }
+
+  .indent-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .indent-section-white {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .section-text-container {
+    margin-left: 150px;
+    margin-right: 0px;
+    flex: 4;
+    background-color:  #EAF3FA; /* Just for visualization */
+    padding: 0px;
+  }
+
+  .section-text-container-2 {
+    margin-left: 150px;
+    margin-right: 0px;
+    flex: 4;
+    background-color:  #C1DAF1; /* Just for visualization */
+    padding: 0px;
+  }
+
+  .section-text-container-white {
+    margin-left: 150px;
+    margin-right: 0px;
+    flex: 4;
+    background-color:  white; /* Just for visualization */
+    padding: 0px;
+  }
+
+  .section-graph {
+    font-size: 14px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-top: 5px; /* Decrease top margin to move text up */
+    margin-bottom: 10px; /* Decrease top margin to move text up */
+  }
+  .section-portait-container{
+    flex: 1;
+    background-color:  #EAF3FA;; /* Just for visualization */
+    padding: 10px;
+    margin-right: 150px;
+    margin-left: 50px;
+  }
+
+  .process-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #EAF3FA;
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-gap: 40px; /* Adjust the gap between dashboard items */
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+  }
+
+  .process-item {
+      background-color: #EAF3FA
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+  }
+  .process-item-head {
+    font-size: 20px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-bottom: 5px; /* Decrease top margin to move text up */
+  }
+  .process-item-describe {
+    font-size: 14px; /* Set the font size as needed */
+    font-family: Helvetica; /* Set the desired font family */
+    color: #666666 ;
+    margin-top: 5px; /* Decrease top margin to move text up */
+    margin-bottom: 5px; /* Decrease top margin to move text up */
+    text-align: left
+  }
+  .section-text-container-white {
+    margin-left: 150px;
+    margin-right: 150px;
+    flex: 4;
+    padding: 0px;
+  }
+  .image-container img {
+    width: 700px;
+    margin-top: 20px;   
+    margin-right: 200px; 
+    margin-bottom: 20px;
+    margin-left: 200px; 
+  }
+  .image-container-1 img {
+    width: 500px;
+    margin-top: 20px;   
+    margin-right: 200px; 
+    margin-bottom: 20px;
+    margin-left: 300px; 
+  }
+  .image-container-2 img {
+    float: flex;
+    width: 300px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 50px; 
+  }
+  .image-container-3 img {
+    float: flex;
+    width: 400px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 120px; 
+  }
+  .image-container-4 img {
+    width: 100px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 250px; 
+    margin-right: 500px; 
+  }
+  .image-container-5 img {
+    float: flex;
+    width: 500px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 50px; 
+  }
+  .image-container-6 img {
+    float: flex;
+    width: 100px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    margin-left: 50px; 
+  }
+  .text-after-img {
+    float: left;
+  }
+  .uppercase-text {
+    text-transform: uppercase;
+  }
+
+  
+
+  

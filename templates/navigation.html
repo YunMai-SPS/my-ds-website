@@ -1,0 +1,146 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('da_page') }}">HOME</a></li> 
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class='vh-30' id="headImage">   
+                <img src="{{ url_for('static', filename='/' + image_filename) }}" alt="Header image"> 
+                
+                <div class="text-box">
+                    <div class="text-box-item-1 white-bg">
+                        <p>Yun Mai</p>
+                    </div>
+                    <div class="text-box-item-2 no-bg">
+                        <p>Data Scientist</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <section_large id="skills">
+                <div class='vh-100'> 
+                    <p class="custom-head"><span class="underline">SKILLS</span></p>
+                    <p class="content-text">As a data analyst and data scientist, I turn raw data into actionable insights. My goal is to identify inefficiencies, reduce cost, increase customer satisfaction and market share, uncover new revenue opportunities, drive improvements in precision medicine, and help business to make informed decisions.</p>
+                    <p class="content-text">I am experienced in statistics, machine learning, supervised and unsupervised algorithms, deep learning, NLP, and use data visualization techniques to present the results. I use SQL, R, Python, Tableau for my data projects.</p>
+
+                    <div class="dashboard">
+                        <div class="dashboard-item">
+                            <div>
+                                <img src="{{ url_for('static', filename='ANA.png') }}" alt="Icon 1">   
+                            </div>
+                            <div class="item-content">
+                                <p class="dashboard-item-head">Data Analytics</p>
+                                <p class="dashboard-item-describe">Analyze raw data, uncover trends, answer questions, draw conclusions, make recommendations, and convert data into actionable insights.</p> 
+                                <a href="{{ url_for('da_page') }}">(example)</a>
+                            </div>      
+                        </div>
+
+                        <div class="dashboard-item">
+                            <div>
+                                <img src="{{ url_for('static', filename='ML.png') }}" alt="Icon 2">   
+                            </div>
+                            <div class="item-content">
+                                <p class="dashboard-item-head">Business Intelegent</p>
+                                <p class="dashboard-item-describe">Unleash the complete potential of the data by leveraging machine learning and predictive models to anticipate behaviors, pinpoint the ideal customers, and optimize the value extracted from the data.</p> 
+                                <a href="{{ url_for('bi_page') }}">(example)</a>   
+                            </div>      
+                        </div>
+
+                        <div class="dashboard-item">
+                            <div>
+                                <img src="{{ url_for('static', filename='DB_4.png') }}" alt="Icon 3">   
+                            </div>
+                            <div class="item-content">
+                                <p class="dashboard-item-head">Dashboards</p>
+                                <p class="dashboard-item-describe">Unlock insights effortlessly with our interactive dashboard, providing a dynamic experience for users to delve into the latest results by simply clicking and drilling into the data.</p> 
+                                <a href="{{ url_for('db_page') }}">(example)</a>    
+                            </div>      
+                        </div> 
+                        
+                        <div class="dashboard-item">
+                            <div>
+                                <img src="{{ url_for('static', filename='bioinf_3.png') }}" alt="Bioinformatics Icon">   
+                            </div>
+                            <div class="item-content">
+                                <p class="dashboard-item-head">Bioinformatics</p>
+                                <p class="dashboard-item-describe">Navigate the complexities of flow cytometry, NGS, and multi-omics data with advanced bioinformatics. Employ computational and statistical methods for tasks such as dimensionality reduction, cell population identification, and differential expression of biomarkers.</p> 
+                                <a href="{{ url_for('bioinf_page') }}">(example)</a>    
+                            </div>      
+                        </div>
+
+                        <div class="dashboard-item">
+                            <div>
+                                <img src="{{ url_for('static', filename='NLP_4.png') }}" alt="NLP Icon">   
+                            </div>
+                            <div class="item-content">
+                                <p class="dashboard-item-head">NLP</p>
+                                <p class="dashboard-item-describe">Utilize the capabilities of Natural Language Processing (NLP) to reveal insights, extract valuable information, and comprehend the language embedded in data.</p> 
+                                <a href="{{ url_for('nlp_page') }}">(example)</a>    
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </section_large>
+
+            <section_medium id="about">
+                <div class='vh-50 bg-lightblue1'>
+                    <p class="custom-head"><span class="underline">ABOUT</span></p>
+                    <div class="indent-section">
+                        <div class="section-text-container">
+                            <p class="section-graph">Hi, my name is Yun and I work as a data scientist. I hold a master's degree in data science (City University of New York) and a Ph.D. in biochemistry and molecular biology (Chinese Academy of Science).</p>
+                            <p class="section-graph">I loved doing origami when I was young. I have enjoyed solving problems by collecting and analyzing data since my after-graduate program, much like a skilled origamist, crafting intricate patterns from data with precision and logic, and folding complexity into elegant solutions.</p>
+                            <p class="section-graph">With a mixed background of more than 10 years of experience in molecular biology and biochemistry research and more than 3 years of data analytics, natural language processing,  and computational biology in precision medicine on cancer and Mendelian disease, I have collaborated closely with pharmaceutical clients which gave me the ability to translate their business objectives into specific and measurable project goals.</p>
+                            <p class="section-graph">Looking to collaborate? Reach out to Yun via email for her data science expertise and problem-solving passion.</p>
+                        </div>
+                        <div class="section-portait-container">
+                            <img src="{{ url_for('static', filename='my_picture_1.png') }}" alt="My portrait">   
+                        </div>
+                    </div>   
+                </div>
+            </section_medium>
+            
+            <!-- <section id="portfolio">
+                <div class='vh-100 bg-lightblue2'> 
+                    <p class="custom-head_2"><span class="underline">PORTFOLIO</span></p>
+                </div>
+            </section> -->
+
+            <section id="contact">
+                <div class='vh-10 bg-lightblue2'>
+                    <p class="custom-head"><span class="underline">CONTACT</span></p>
+                    <div class="indent-section">
+                        <div class="section-text-container-2">
+                            <p class="section-graph">TEL: 617-513-6378</p>
+                            <p class="section-graph">EMAIL: maiyun.cn@gmail.com</p>
+                            <p class="section-graph">Linkedin: https://www.linkedin.com/in/yunmai/</p>
+                            <p class="section-graph">Github: https://github.com/YunMai-SPS</p>
+                            <p class="section-graph">Google Scholar: https://scholar.google.com/citations?user=MopOq1UAAAAJ&hl=en</p>                   
+                        </div>
+                    </div>
+                 </div>
+            </section>
+
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+     
+</body>
+</html>
