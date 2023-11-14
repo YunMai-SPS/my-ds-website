@@ -1,2 +1,2 @@
-Flask                     2.2.5
-dash                      2.12.1
+Flask                     
+dash                      
