@@ -240,6 +240,12 @@ body {
     flex-direction: column;
   }
 
+  .process-item-content {
+    flex-grow: 1;
+    display: none;
+    flex-direction: column;
+  }
+
   .graphs {
       display: flex;
       flex-direction: column;
@@ -384,7 +390,7 @@ body {
   }
 
   .process-item {
-      background-color: #EAF3FA
+      background-color: #6c86a1;  /*#EAF3FA*/
       padding: 20px;
       border-radius: 10px;
       display: flex;
