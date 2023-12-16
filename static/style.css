@@ -164,10 +164,12 @@ body {
     font-family: Helvetica; /* Replace with your custom font */
     margin-left: 130px;  /* Adjust the left margin as needed */
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 26px;
     color: #666666 ; /* #ccc  #444444 */
     padding: 20px;
+    /* border: 2px solid green; */
+    height: 25px;
   }
 
   .custom-head_2 {
@@ -203,7 +205,7 @@ body {
   }
 
   .content-text {
-    background-color: #f0f0f0;
+    background-color: white; /*#f0f0f0*/
     font-family: Helvetica;
     margin-left: 150px;  /* Adjust the left margin as needed */
     margin-right: 150px;  /* Adjust the left margin as needed */
@@ -212,7 +214,9 @@ body {
     padding: 5px;
     text-align: left;
     font-size: 14px;
-    color: #666666 ; /* #ccc  #444444 */
+    color: #666666 ; /* #ccc  #444444 #666666*/
+    /* border: 2px solid green; */
+    height: 60px;
   }
 
   .dashboard {
@@ -341,7 +345,7 @@ body {
   .indent-section {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .indent-section-white {
@@ -356,6 +360,7 @@ body {
     flex: 4;
     background-color:  #EAF3FA; /* Just for visualization */
     padding: 0px;
+    /* border: 2px solid green; */
   }
 
   .section-text-container-2 {
@@ -384,9 +389,11 @@ body {
   .section-portait-container{
     flex: 1;
     background-color:  #EAF3FA;; /* Just for visualization */
-    padding: 10px;
+    padding: 0px;
     margin-right: 150px;
     margin-left: 50px;
+    margin-top: 0px;
+    /* border: 2px solid green; */
   }
 
   .process-section {
