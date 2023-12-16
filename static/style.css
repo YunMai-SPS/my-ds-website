@@ -30,6 +30,11 @@ body {
   .bg-blue  { background: blue;  }
   .bg-lightblue1 {background: #EAF3FA; }
   .bg-lightblue2 {background: #C1DAF1; }
+  .bg-lightgreen {background: #D9EAD3; }
+  .bg-lightgreen2 {background: #C3E8E8; }
+  .bg-pink {background: #FDDCDC; } /*#FDE7E7 #FBD1D1* /
+  
+
   div       { color: white;      }
 
   .container {
@@ -238,12 +243,17 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
   }
 
   .process-item-content {
-    flex-grow: 1;
-    display: none;
+    /* flex-grow: 1; */
+    /* display: flex; */
+    /* align-items: flex-start;  */
     flex-direction: column;
+    /* border: 2px solid green; */
+    width: 320px;
+    height: 160px;
   }
 
   .graphs {
@@ -382,12 +392,44 @@ body {
   .process-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #EAF3FA;
+    background-color: #EAF3FA; 
     /*grid-template-rows: repeat(2, 1fr);*/
     grid-gap: 40px; /* Adjust the gap between dashboard items */
     margin-left: 150px;  /* Adjust the left margin as needed */
     margin-right: 150px;  /* Adjust the left margin as needed */
   }
+  
+  .process-section-da {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #D9EAD3 ; /*#EAF3FA*/
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-gap: 40px; /* Adjust the gap between dashboard items */
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+  }
+
+  .process-section-bio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #C3E8E8 ; /*#EAF3FA*/
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-gap: 40px; /* Adjust the gap between dashboard items */
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+  }
+  .process-section-rs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #FDDCDC; /*#EAF3FA*/
+    /*grid-template-rows: repeat(2, 1fr);*/
+    grid-gap: 40px; /* Adjust the gap between dashboard items */
+    margin-left: 150px;  /* Adjust the left margin as needed */
+    margin-right: 150px;  /* Adjust the left margin as needed */
+  }
+
+
+  
 
   .process-item {
       background-color: #6c86a1;  /*#EAF3FA*/
@@ -395,19 +437,45 @@ body {
       border-radius: 10px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
   }
+  .process-item-da {
+    background-color: #93C47D;  
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .process-item-bio {
+    background-color: #108585;  
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .process-item-rs {
+    background-color: #CA7C8A;  /*#F7758C #FFA0B0*/
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
   .process-item-head {
     font-size: 20px; /* Set the font size as needed */
     font-family: Helvetica; /* Set the desired font family */
-    color: #666666 ;
-    margin-bottom: 5px; /* Decrease top margin to move text up */
+    color: #EEEEEE ; /*#666666 */
+    margin-top: 10px; /* Decrease top margin to move text up */
   }
   .process-item-describe {
     font-size: 14px; /* Set the font size as needed */
     font-family: Helvetica; /* Set the desired font family */
-    color: #666666 ;
+    color: #EEEEEE; /*#666666 */
     margin-top: 5px; /* Decrease top margin to move text up */
-    margin-bottom: 5px; /* Decrease top margin to move text up */
+    margin-bottom: 5px;
     text-align: left
   }
   .section-text-container-white {
@@ -465,12 +533,27 @@ body {
     margin-bottom: 20px;
     margin-left: 50px; 
   }
+  .image-container-7 img {
+    width: 900px;
+    margin-top: 20px;   
+    margin-right: 200px; 
+    margin-bottom: 20px;
+    margin-left: 200px; 
+  }
   .text-after-img {
     float: left;
   }
   .uppercase-text {
     text-transform: uppercase;
   }
+  .bullet-list {
+    /* list-style: circle; */
+    list-style-type: disc;
+    color: #666666; 
+    padding-left: 10px;
+    /* border: 2px solid green; */
+  }
+
 
   
 

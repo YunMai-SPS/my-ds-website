@@ -1,10 +1,10 @@
 
 from flask import Flask, render_template
-from dash import Dash
+#from dash import Dash
 
 app = Flask(__name__)
 
-dash_app = Dash(__name__, server=app, url_base_pathname='/dash/')
+#dash_app = Dash(__name__, server=app, url_base_pathname='/dash/')
 
 @app.route('/')
 def home():
@@ -30,6 +30,10 @@ def bioinf_page():
 @app.route('/nlp')
 def nlp_page():
     return render_template('nlp.html')
+
+@app.route('/recommendation_system')
+def rs_page():
+    return render_template('rs.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

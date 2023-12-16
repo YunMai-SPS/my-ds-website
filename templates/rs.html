@@ -1,0 +1,112 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BI Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('da_page') }}">HOME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class='vh-5',id='headPanel'>
+                <p class="custom-head uppercase-text"><span class="underline">Recommendation System</span></p>
+            </div>
+            <section_small id="skills">
+                <div class='vh-25 bg-pink',id='processPanel'>
+                    <div class="process-section-rs">
+                        <div class="process-item-rs">
+                            <div class="process-item-content">
+                                <p class="process-item-head uppercase-text">Proposal</p>
+                                <p class="process-item-describe">Generate proposals by exploring data through descriptive statistics, visualizations, and preliminary analyses. Formulate hypotheses based on observed patterns and trends in the data.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item-rs">
+                            <div class="process-item-content">
+                                <p class="process-item-head uppercase-text">Report</p>
+                                <p class="process-item-describe">Data collection, data Cleaning, feature engineering, model development, evaluation, interpretation, communication, iterative refinement, deployment, and generate the report.</p> 
+                            </div>   
+                        </div>
+    
+                        <div class="process-item-rs">
+                            <div class="process-item-content">
+                                <p class="process-item-head uppercase-text">Turnaround Time</p>
+                                <p class="process-item-describe">The timeframe ranges from two weeks to three months, during which distinct phases and milestones are collaboratively defined with clients.</p> 
+                            </div>   
+                        </div>
+                        
+                    </div>   
+                </div>
+            </section_small>
+            
+            <section id="case">
+                <div class='vh-100'> 
+                    <div class="section-text-container-white vh-5">
+                        <p class="custom-head_3 uppercase-text"><span class="underline-lightblue2">Introduction</span></p>
+                        <p class="section-graph">Tired of endless scrolling and review fatigue? Imagine a restaurant recommendation app that understands your preferences and serves up the perfect spot in seconds. No more decision paralysis, just delicious discoveries.</p>
+                        <p class="section-graph">This project tackles that challenge head-on, leverages the power of a comprehensive user-review dataset and cutting-edge algorithms, honed in the data-driven insights of the course "Current Topics of Data Science: Recommendation Systems," to craft a personalized dining guide. Say goodbye to guesswork and hello to culinary bliss!</p>
+                        
+                        <p class="custom-head_3"><span class="underline-lightblue2">Aims:</span></p>
+                        <ul class="section-graph">
+                            <li class="bullet-list">Leveraging collaborative filtering: We'll utilize advanced algorithms to analyze user-restaurant interactions and predict preferences, building a robust foundation for personalized recommendations.</li>
+                            <li class="bullet-list">Enriching beyond ratings: Recognizing the limitations of solely relying on star ratings, we'll incorporate user feedback on humor, usefulness, and coolness. This multi-faceted approach aims to diversify and personalize recommendations, leading to serendipitous discoveries and potentially exceeding expectations.</li>    
+                        </ul>
+
+                        <p class="custom-head_3"><span class="underline-lightblue2">Data:</span></p>
+                        <p class="section-graph">The analysis is fueled by Yelp's Dataset Challenge round 9, a massive collection of user interactions and business attributes. With 4.1 million reviews and 947,000 tips contributed by 1 million users, the dataset paints a comprehensive picture of 144,000 businesses across various locations. Beyond reviews, the dataset dives deeper with 1.1 million business attributes like hours, parking, and ambiance, as well as aggregated check-ins for 125,000 businesses, providing valuable insights into user behavior and preferences.</p>
+
+                        <div class="image-container-1">
+                            <img src="{{ url_for('static', filename='rs_fig1.png') }}" alt="figure 1"> 
+                            <img src="{{ url_for('static', filename='rs_fig2.png') }}" alt="figure 2"> 
+                        </div>
+
+                        <p class="custom-head_3"><span class="underline-lightblue2">Creating a Recommender</span></p>
+                        <p class="section-graph">Building a user-based model involves constructing a "neighborhood" of similar users for each individual. By analyzing these neighborhoods, the model will learn how users with similar preferences tend to rate restaurants. This knowledge empowers it to predict how the target user would rate restaurants not yet experienced, ultimately recommending those most likely to resonate with their unique palate.</p>
+                        <div class="image-container-1">
+                            <img src="{{ url_for('static', filename='rs_fig3.png') }}" alt="figure 3"> 
+                        </div>
+                        <p class="custom-head_4"><span class="underline-lightblue2">Building a User-based Collaborative Filtering Model: Single_Criterion v.s. Multi-Criteria Recommender System.</span></p>
+                        <div class="image-container-7">
+                            <img src="{{ url_for('static', filename='rs_fig4.png') }}" alt="figure 4"> 
+ 
+                        </div>
+
+                        <p class="custom-head_3"><span class="underline-lightblue2">Conclusion and Discussion:</span></p>
+                        <p class="section-graph">1. This project explored two approaches to restaurant recommendation systems: user-based collaborative filtering and multi-criteria ratings. Using the Yelp Dataset Challenge round 9 data, we successfully built a user-based model with an RMSE of 1.47. While this demonstrates the model's ability to learn user preferences, incorporating additional factors like location (e.g., distance or geospatial data) could further refine recommendations and improve personalization.</p>
+                        <p></p>
+                        <p class="section-graph">2. Intriguingly, the multi-criteria rating system yielded a completely different set of recommendations for users, with a 100% serendipity score. This suggests the system effectively diversifies recommendations beyond user-based similarities. Furthermore, the accuracy also improved, as evidenced by a significantly lower RMSE of 0.5. This suggests that utilizing multiple criteria, such as "funny," "useful," and "cool" in addition to ratings, can lead to more accurate and personalized recommendations.</p>
+                        
+
+                        <p class="custom-head_3"><span class="underline-lightblue2">Reference:</span></p>
+                        <p class="section-graph">1. Blanca Vargas-Govea, Gabriel González-Serna, Rafael Ponce-Medellín. Effects of relevant contextual features in the performance of a restaurant recommender system.CARS,( 2011)</p>
+                        <p class="section-graph">2. Mengqi Yu, Meng Xue, Wenjia Ouyang. Restaurants Review Star Prediction for Yelp Dataset.Conference Proceedings (2015).</p>
+                        <p class="section-graph">3. Gediminas Adomavicius, YoungOk Kwon. New Recommendation Techniques for Multi-Criteria Rating Systems. IEEE Intelligent Systems 22-3 (2017). </p>
+                        <p class="section-graph">4. Jun Zeng, Feng Li, Haiyang Liu, Junhao Wen, Sachio Hirokawa. A Restaurant Recommender System Based on User Preference and Location in Mobile Environment. Advanced Applied Informatics (IIAI-AAI), 2016 5th IIAI International Congress.</p>
+                        <p class="section-graph">5. Qiuxia Lu, Tianqi Chen, Weinan Zhang, Diyi Yang, Yong Yu.Serendipitous Personalized Ranking for Top-N Recommendation.Proceeding WI-IAT '12 Proceedings of the 2012 IEEE/WIC/ACM International Joint Conferences on Web Intelligence and Intelligent Agent Technology, Volume 01, 258-265 (2012).</p>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+     
+</body>
+</html>
+
+            
